@@ -3,6 +3,81 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gracemont Church Navigation</title>
+    <style>
+        /* Base styles to clear margins and set up the layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fcfcfc;
+        }
+
+        /* Flexbox structure to space out the Logo, Nav Links, and Icons */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        /* Left Section: Logo container */
+        .nav-logo img {
+            height: 45px; 
+            display: block;
+        }
+
+        /* Center Section: Main navigation links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333333;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        /* Subtle hover effect for the menu links */
+        .nav-links a:hover {
+            color: #c5a059; /* Matching a subtle gold tone from the logo */
+        }
+
+        /* Right Section: System icons and profile picture */
+        .nav-icons {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .nav-icons img {
+            height: 22px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-icons img:hover {
+            opacity: 1;
+        }
+
+        /* Rounded styling for the avatar image */
+        .profile-pic {
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            object-fit: cover;
+        }
+    </style>
 <title>Gracemont Church</title>
 <style>
 body {
@@ -52,7 +127,29 @@ display: inline-block;
 <!-- <script src="https://js.churchcenter.com/modal/v1"></script> -->
 </head>
 <body>
-​<img src="Images/gcilogo.png" alt="Gracemont Church Logo" class="logo">
+​<header class="navbar">
+    <!-- Left: Logo -->
+    <div class="nav-logo">
+        <a href="#"><img src="logo_placeholder.png" alt="Gracemont Church logo"></a>
+    </div>
+    
+    <!-- Center: Links -->
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Give</a></li>
+        <li><a href="#">Calendar</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Groups</a></li>
+    </ul>
+
+    <!-- Right: Notification / Chat / Profile Icons -->
+    <div class="nav-icons">
+        <img src="bell_icon.png" alt="Notifications">
+        <img src="chat_icon.png" alt="Messages">
+        <img src="profile_placeholder.png" alt="Profile" class="profile-pic">
+    </div>
+</header>
+<img src="Images/gcilogo.png" alt="Gracemont Church Logo" class="logo">
 ​<div class="welcome-text">
 <h2>WELCOME HOME!</h2>
 <p>We believe God made you with a purpose for a purpose. We exist to build relationships with God and each other. Together we make friends from strangers, and family from friends.</p>
